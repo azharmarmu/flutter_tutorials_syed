@@ -13,12 +13,12 @@
 import 'dart:io';
 
 void main() {
- 
   print('Enter your principle Amount: ');
-  double prinicipleAmount = double.parse(stdin.readLineSync()!);
- 
+  String s = stdin.readLineSync()!;
+  double prinicipleAmount = double.parse(s);
+
   print('Enter your interest rate %: ');
-  double rate = double.parse(stdin.readLineSync() ?? '4')/100;
+  double rate = double.parse(stdin.readLineSync() ?? '4') / 100;
 
   print('Enter your name: ');
   String name = stdin.readLineSync()!;
@@ -54,5 +54,5 @@ void main() {
   double amountToBePaid = prinicipleAmount + (prinicipleAmount * rate);
   print('''${person['name']} Amount to be paid for the Principle is
        $prinicipleAmount
-      and rate of interest ${rate*100}: $amountToBePaid''');
+      and rate of interest ${rate * 100}: $amountToBePaid''');
 }

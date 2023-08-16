@@ -1,8 +1,7 @@
 void main() {
-  
   int intA = 10;
   //convert to String;
-  String stringA = '$intA'; //or intA.toString()
+  String stringA = '$intA'; //or String stringA = intA.toString();
 
   double doubleB = 10.5;
   //question: convert double to string
@@ -15,10 +14,9 @@ void main() {
   bool.parse(ageString);
   num.parse('10');
 
-
   //convert (String of null) to String
   String? a;
-  String b = a ?? 'as'; //or a! note both(??, !) are not equal
+  String b = a ?? 'as'; //or String b = a! note both(??, !) are not equal
 
   String name = 'abc';
   String? firsName = name;
@@ -30,7 +28,6 @@ void main() {
   //convert (list of null) to list
   List<int>? listA;
   List<int> listB = listA!;
-
 
   //number conversion
   int numberInt = 10;
