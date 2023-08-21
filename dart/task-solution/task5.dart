@@ -19,7 +19,7 @@ void main() {
     print('Enter proper value');
   }
 
-  // Line 7,8,9 can be simplied into this ==> int index = int.parse(stdin.readLineSync()!)
+  // Line 7,8 & 11 can be simplied into this ==> int index = int.parse(stdin.readLineSync()!)
 
   print('\n\n---Task5 End---');
 }
